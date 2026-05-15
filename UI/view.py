@@ -23,11 +23,11 @@ class View(ft.UserControl):
         #ROW 1
         self._txtInCMin = ft.TextField(label="N min Compagnie")
         self._btnAnalizzaAereoporti = ft.ElevatedButton(text="Analizza Aereoporti",
-                                                        on_click=self._controller.handleAnallizza)
+                                                        on_click=self._controller.handleAnalizza)
 
         row1 = ft.Row([
             ft.Container(None, width=250),
-            ft.Container(self._txtInCMin, wdth=250),
+            ft.Container(self._txtInCMin, width=250),
             ft.Container(self._btnAnalizzaAereoporti, width=250)
         ], alignment=ft.MainAxisAlignment.CENTER)
 
@@ -37,7 +37,7 @@ class View(ft.UserControl):
                                                        on_click=self._controller.handleConnessi)
         row2 = ft.Row([
             ft.Container(None, width=250),
-            ft.Container(self._ddAeroportoP, wdth=250),
+            ft.Container(self._ddAeroportoP, width=250),
             ft.Container(self._btnAeroportiConnessi, width=250)
         ], alignment=ft.MainAxisAlignment.CENTER)
 
@@ -48,7 +48,7 @@ class View(ft.UserControl):
 
         row3 = ft.Row([
             ft.Container(self._ddAeroportoA, width=250),
-            ft.Container(self._txtInNTratteMax, wdth=250),
+            ft.Container(self._txtInNTratteMax, width=250),
             ft.Container(self._btnCercaItinerario, width=250)
         ], alignment=ft.MainAxisAlignment.CENTER)
 
